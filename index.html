@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <script src="/socket.io.js"></script>
+<!--   <script src="http://localhost/jquery-2.0.0.min.js"></script>
+   <script type="text/javascript" src="http://localhost/d3.v3.min.js"></script> -->
+   <script>
+
+	  var socket = io.connect('http://localhost');
+	  socket.on('conStatus', function (data) {
+	        console.log(data);
+	  });
+
+	  socket.on('DroneStatus', function (data) {
+	        console.log(data);
+	  });
+
+   </script>
+ </head>
+ <body>
+   <script>
+	///////////////////Drag behaviour that can be attached to object/////
+	function texttype(){
+  		console.log('Send trigger CPP Drone command');
+		socket.emit('triggerCPPDroneApp', 'testData');
+        }
+
+   </script>
+<form>
+
+<input type="text" onkeypress="texttype()" id="myxcoord"/>
+
+</form>
+
+</body>
+</html>

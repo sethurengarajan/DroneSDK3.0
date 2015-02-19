@@ -1,0 +1,22 @@
+{
+  "name": "DroneApp",
+  "version": "0.0.0",
+  "description": "\"Nothing gets the taste of shame and humiliation out of your mouth like a piece of [BebopRebopAPI]\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spiderkeys/BebopRebopAPI.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/spiderkeys/BebopRebopAPI/issues"
+  },
+  "dependencies": {
+    "express": "~4.11.2",
+    "socket.io": "~1.3.4"
+  }
+}
